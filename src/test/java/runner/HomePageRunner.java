@@ -6,8 +6,10 @@ import org.testng.annotations.BeforeClass;
 import io.cucumber.testng.CucumberOptions;
 
 
-@CucumberOptions( tags = {"@AmzaonSecondHighestPriceTV"},glue = {"stepdefs"}, plugin = {"html:target/cucumber-reports/HomePage/cucumber-pretty","json:target/json-cucumber-reports/homepage/cukejson.json",
-		"testng:target/testng-cucumber-reports/HomePage/cuketestng.xml" }, features = {"src/test/resources/features/HomePage"})
+@CucumberOptions( tags = {"@AmzaonSecondHighestPriceTV"},
+glue = {"stepdefs"}, plugin = {"html:target/cucumber-reports/HomePage/cucumber-pretty","json:target/json-cucumber-reports/homepage/cukejson.json",
+		"testng:target/testng-cucumber-reports/HomePage/cuketestng.xml" }, 
+features = {"src/test/resources/features/HomePage"})
 public class HomePageRunner extends AbstractTestNGCucumberParallelTests {
 	
 	@BeforeClass

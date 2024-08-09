@@ -86,7 +86,7 @@ public class webconnector<V> {
 		if (scenario.isFailed()) {
 			saveScreenshotsForScenario(scenario);
 		}
-		driver.close();
+		driver.quit();
 	}
 
 	private void saveScreenshotsForScenario(final Scenario scenario) {
