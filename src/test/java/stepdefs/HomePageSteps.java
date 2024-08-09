@@ -44,7 +44,7 @@ public class HomePageSteps extends webconnector {
     public void aUserNavigatesToHomePage() throws InvalidFormatException, IOException {
         this.homePage.goToHomePage();
     }
-    @Given("^User navigates to Amazon app URL")
+    @Given("User navigates to Amazon app URL")
     public void aUserNavigatesToURL() throws InvalidFormatException, IOException {
         this.homePage.goToHomePage();
     }
